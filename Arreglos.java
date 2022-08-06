@@ -35,18 +35,18 @@ public class Arreglos {
                    salir=true;
                    break;
                 default:
-                   System.out.println("Solo números entre 1 y 5");                                     
+                   System.out.println("Solo nÃºmeros entre 1 y 5");                                     
            }
        }
   return;
     }
     public static void  llenarArreglo(){
-        Progra1 obj = new Progra1();
+        Arreglos obj = new Arreglos();
         int[] numeros= obj.llamada();        
         System.out.println("Lista de numeros: " + Arrays.toString(numeros));   
     }
     public static void ordenarAsc() {
-        Progra1 obj = new Progra1();
+        Arreglos obj = new Arreglos();
         int[] numeros= obj.llamada();
         Arrays.sort(numeros);
         System.out.println("Lista de numero ascendente: ");  
@@ -54,11 +54,10 @@ public class Arreglos {
         System.out.println(numeros[i]);
     }        
     public static void ordenarDes() {
-        Progra1 obj = new Progra1();
+        Arreglos obj = new Arreglos();
         int[] numeros= obj.llamada();
         Arrays.sort(numeros);
         System.out.println("Lista de numero descendente: ");         
         for (int i = numeros.length-1; i >= 0; i--)          
         System.out.println(numeros[i]);
     }        
-}
